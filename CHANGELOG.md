@@ -95,7 +95,7 @@
 
 ## v0.2.5
 
-- feat: git@github.com:Droplr/iohook.git
+- feat: git@github.com:Droplr/iohook-v2.git
 - fix: fix documentation link.
 - chore : repo transfered to Droplr org.
 
