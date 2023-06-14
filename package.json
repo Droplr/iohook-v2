@@ -1,0 +1,255 @@
+{
+  "name": "iohook-v2",
+  "version": "1.0.0",
+  "description": "Node.js global keyboard and mouse hook",
+  "author": "Haris Muhibic",
+  "license": "MIT",
+  "homepage": "https://github.com/Droplr/iohook-v2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Droplr/iohook-v2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Droplr/iohook-v2/issues"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "install": "node install.js",
+    "build": "node build.js --upload=false",
+    "build:ci": "node build.js --all",
+    "build:print": "node -e 'require(\"./helpers\").printManualBuildParams()'",
+    "test": "jest",
+    "lint:dry": "eslint --ignore-path .lintignore .",
+    "lint:fix": "eslint --ignore-path .lintignore --fix . && prettier --ignore-path .lintignore --write .",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "npm run docs:build && gh-pages -d docs/.vuepress/dist/"
+  },
+  "overrides": {
+    "nan": "github:tec27/nan#remove_accessor_signature"
+  },
+  "resolutions": {
+    "nan": "github:tec27/nan#remove_accessor_signature"
+  },          
+  "keywords": [
+    "hook",
+    "electron",
+    "nw.js",
+    "listener",
+    "mousemove",
+    "keypress",
+    "keyup",
+    "global keypress",
+    "shortcut"
+  ],
+  "lint-staged": {
+    "examples/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "docs/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "test/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "nugget": "^2.2.0",
+    "pump": "^3.0.0",
+    "rc": "^1.2.8",
+    "tar-fs": "^2.1.1"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^3.2.13",
+    "@types/node": "^20.2.5",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "fs-extra": "^11.1.1",
+    "gh-pages": "^5.0.0",
+    "htmlhint": "^1.1.4",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "lint-staged": "^13.2.2",
+    "minimist": "^1.2.8",
+    "nan": "github:tec27/nan#remove_accessor_signature",
+    "node-abi": "^3.44.0",
+    "node-gyp": "^9.3.1",
+    "prebuild": "^11.0.4",
+    "prettier": "^2.8.8",
+    "robotjs": "^0.6.0",
+    "tar": "^6.1.15",
+    "vuepress": "^1.9.9"
+  },
+  "supportedTargets": [
+    [
+      "electron",
+      "4.0.4",
+      "69"
+    ],
+    [
+      "electron",
+      "5.0.0",
+      "70"
+    ],
+    [
+      "electron",
+      "6.0.0",
+      "73"
+    ],
+    [
+      "electron",
+      "7.0.0",
+      "75"
+    ],
+    [
+      "electron",
+      "8.0.0",
+      "76"
+    ],
+    [
+      "electron",
+      "9.0.0",
+      "80"
+    ],
+    [
+      "electron",
+      "10.0.0",
+      "82"
+    ],
+    [
+      "electron",
+      "11.0.0",
+      "85"
+    ],
+    [
+      "electron",
+      "12.0.0",
+      "87"
+    ],
+    [
+      "electron",
+      "13.0.0",
+      "89"
+    ],
+    [
+      "electron",
+      "14.0.0",
+      "89"
+    ],
+    [
+      "electron",
+      "15.0.0",
+      "98"
+    ],
+    [
+      "electron",
+      "16.0.0",
+      "99"
+    ],
+    [
+      "electron",
+      "17.0.0",
+      "101"
+    ],
+    [
+      "electron",
+      "18.0.0",
+      "103"
+    ],
+    [
+      "electron",
+      "19.0.0",
+      "106"
+    ],
+    [
+      "electron",
+      "20.0.0",
+      "107"
+    ],
+    [
+      "electron",
+      "21.0.0",
+      "109"
+    ],
+    [
+      "electron",
+      "22.0.0",
+      "110"
+    ],
+    [
+      "electron",
+      "23.0.0",
+      "113"
+    ],
+    [
+      "electron",
+      "24.0.0",
+      "114"
+    ],
+    [
+      "electron",
+      "25.0.0",
+      "116"
+    ],
+    [
+      "node",
+      "10.0.0",
+      "64"
+    ],
+    [
+      "node",
+      "11.4.0",
+      "67"
+    ],
+    [
+      "node",
+      "12.0.0",
+      "72"
+    ],
+    [
+      "node",
+      "13.0.0",
+      "79"
+    ],
+    [
+      "node",
+      "14.0.0",
+      "83"
+    ],
+    [
+      "node",
+      "15.0.0",
+      "88"
+    ],
+    [
+      "node",
+      "16.0.0",
+      "93"
+    ],
+    [
+      "node",
+      "17.1.0",
+      "102"
+    ],
+    [
+      "node",
+      "18.0.0",
+      "108"
+    ]
+  ]
+}
