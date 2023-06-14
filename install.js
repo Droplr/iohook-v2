@@ -65,20 +65,19 @@ function install(runtime, abi, platform, arch, cb) {
 
   nugget(downloadUrl, nuggetOpts, function (errors) {
     if (errors) {
-      return;
-      // const error = errors[0];
+      const error = errors[0];
 
-      // if (error.message.indexOf('404') === -1) {
-      //   onerror(error);
-      // } else {
-      //   console.error(
-      //     'Prebuild for current platform (' + currentPlatform + ') not found!'
-      //   );
-      //   console.error('Try to build for your platform manually:');
-      //   console.error('# cd node_modules/iohook;');
-      //   console.error('# npm run build');
-      //   console.error('');
-      // }
+      if (error.message.indexOf('404') === -1) {
+        onerror(error);
+      } else {
+        console.error(
+          'Prebuild for current platform (' + currentPlatform + ') not found!'
+        );
+        console.error('Try to build for your platform manually:');
+        console.error('# cd node_modules/iohook;');
+        console.error('# npm run build');
+        console.error('');
+      }
     }
 
     let options = {
