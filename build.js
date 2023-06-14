@@ -95,7 +95,7 @@ function initBuild() {
       return;
     }
 
-    return uploadFiles(files);
+    // return uploadFiles(files);
   });
 
   cpGyp();
