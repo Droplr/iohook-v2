@@ -1,6 +1,6 @@
 {
   "name": "iohook-v2",
-  "version": "1.0.0",
+  "version": "0.9.3",
   "description": "Node.js global keyboard and mouse hook",
   "author": "Haris Muhibic",
   "license": "MIT",
