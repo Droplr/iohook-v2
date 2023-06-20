@@ -31,7 +31,7 @@ function install(runtime, abi, platform, arch, cb) {
 
   console.log('Downloading prebuild for platform:', currentPlatform);
   let downloadUrl =
-    'https://github.com/Droplr/iohook-v2/releases/download/v' +
+    'https://github.com/Droplr/iohook/releases/download/v' +
     pkgVersion +
     '/' +
     currentPlatform +

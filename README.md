@@ -1,12 +1,12 @@
 # iohook
 
 [![NPM version](https://img.shields.io/npm/v/iohook?color=%230088FF)](https://www.npmjs.com/package/iohook)
-[![Release date](https://img.shields.io/github/release-date/Droplr/iohook-v2?color=%230088FF)](https://github.com/Droplr/iohook-v2/releases/latest)
-[![GitHub Super-Linter](https://github.com/Droplr/iohook-v2/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
-[![CI](https://github.com/Droplr/iohook-v2/actions/workflows/ci.yml/badge.svg)](https://github.com/Droplr/iohook-v2/actions/workflows/ci.yml)
+[![Release date](https://img.shields.io/github/release-date/Droplr/iohook?color=%230088FF)](https://github.com/Droplr/iohook/releases/latest)
+[![GitHub Super-Linter](https://github.com/Droplr/iohook/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![CI](https://github.com/Droplr/iohook/actions/workflows/ci.yml/badge.svg)](https://github.com/Droplr/iohook/actions/workflows/ci.yml)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?color=%23008880)](https://github.com/prettier/prettier)
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/iohookjs/Lobby)
-[![Issues](https://img.shields.io/github/issues-raw/Droplr/iohook-v2)](https://github.com/Droplr/iohook-v2/issues)
+[![Issues](https://img.shields.io/github/issues-raw/Droplr/iohook)](https://github.com/Droplr/iohook/issues)
 
 ## About
 
@@ -14,7 +14,7 @@ Node.js global native keyboard and mouse listener.
 
 This module can handle keyboard and mouse events via native hooks inside and outside your JavaScript/TypeScript application.
 
-Found a bug? Have an idea? Feel free to post an [issue](https://github.com/Droplr/iohook-v2/issues) or submit a [PR](https://github.com/Droplr/iohook-v2/pulls).
+Found a bug? Have an idea? Feel free to post an [issue](https://github.com/Droplr/iohook/issues) or submit a [PR](https://github.com/Droplr/iohook/pulls).
 
 **Check out the [documentation](https://Droplr.github.io/iohook).**
 
@@ -53,7 +53,7 @@ A. We try to match the currently supported version of both [Node](https://nodejs
 
 ## Apps
 
-Are you using iohook in your project ? Please tell us in a [PR](https://github.com/Droplr/iohook-v2/pulls) so we an add it to the list !
+Are you using iohook in your project ? Please tell us in a [PR](https://github.com/Droplr/iohook/pulls) so we an add it to the list !
 
 - [Cortex](https://crtx.gg/)
 - [Tracklify](https://tracklify.com/)

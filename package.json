@@ -1,16 +1,16 @@
 {
-  "name": "iohook-v2",
+  "name": "iohook",
   "version": "0.9.3",
   "description": "Node.js global keyboard and mouse hook",
   "author": "Haris Muhibic",
   "license": "MIT",
-  "homepage": "https://github.com/Droplr/iohook-v2",
+  "homepage": "https://github.com/Droplr/iohook",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Droplr/iohook-v2.git"
+    "url": "git+https://github.com/Droplr/iohook.git"
   },
   "bugs": {
-    "url": "https://github.com/Droplr/iohook-v2/issues"
+    "url": "https://github.com/Droplr/iohook/issues"
   },
   "main": "index.js",
   "types": "index.d.ts",
