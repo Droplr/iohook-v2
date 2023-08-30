@@ -148,7 +148,7 @@ function build(runtime, version, abi) {
       if (arch === 'x64') {
         args.push('--v8_enable_pointer_compression=1');
       } else {
-        args.push('--v8_enable_pointer_compression=1');
+        // args.push('--v8_enable_pointer_compression=0');
         args.push('--v8_enable_31bit_smis_on_64bit_arch=1');
       }
     }

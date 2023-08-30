@@ -10,17 +10,22 @@
 		"dependencies": [
 			"./uiohook.gyp:uiohook"
 		],
+		"cflags": [
+			"-std=c99"
+		],
+		"link_settings": {
+				"libraries": [
+						"-Wl,-rpath,@executable_path/.",
+						"-Wl,-rpath,@loader_path/.",
+						"-Wl,-rpath,<!(pwd)/build/Release/"
+				]
+		},
 		"include_dirs": [
 			"<!(node -e \"require('nan')\")",
 			"libuiohook/include"
 		],
 		"configurations": {
 			"Release": {
-				"msvs_settings": {
-					"VCCLCompilerTool": {
-						'ExceptionHandling': 1
-					}
-				}
 			}
 		}
 	}]
