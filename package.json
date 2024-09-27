@@ -31,7 +31,7 @@
   },
   "resolutions": {
     "nan": "github:tec27/nan#remove_accessor_signature"
-  },          
+  },
   "keywords": [
     "hook",
     "electron",
@@ -61,11 +61,6 @@
       "prettier --write"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "nugget": "^2.2.0",
     "pump": "^3.0.0",
@@ -82,7 +77,6 @@
     "fs-extra": "^11.1.1",
     "gh-pages": "^5.0.0",
     "htmlhint": "^1.1.4",
-    "husky": "^8.0.3",
     "jest": "^29.5.0",
     "lint-staged": "^13.2.2",
     "minimist": "^1.2.8",
